@@ -1,0 +1,103 @@
+body {
+  background-color: rgb(235, 244, 253);
+
+  color: black;
+}
+.header-link {
+  cursor: pointer;
+}
+.section {
+  width: 100%;
+  height: 100vh;
+}
+
+.slideshow {
+	position: relative;
+	width: 640px; /* 画像の横幅 */
+	height: 480px; /* 画像の縦幅 */
+}
+
+.slideshow img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: 1s; /* フェードの時間(秒) */
+}
+
+.slideshow .show {
+	opacity: 1;
+	z-index: 1;
+}
+input, textarea {
+  width: 400px;
+  margin-top: 10px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+
+/* contact-submitのCSSを指定してください */
+.contact-submit {
+  background-color: #f4f5e2;
+  color: #889eab;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-bottom: 30px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: block;
+  opacity: 0.8;
+  border-radius: 4px;
+  width: 150px;
+}
+
+.btn:hover {
+  opacity: 1;
+  color: white;
+}
+
+
+.btn.btn-block.btn-social {
+  color: #fff;
+}
+
+.gallery__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gallery__item {
+  width: calc(95% / 2);
+}
+
+.gallery__item:not(:nth-child(-n+2)) {
+  margin-top: 20px;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery__item a {
+  transition: .5s;
+}
+
+.gallery__item a:hover {
+  filter: opacity(0.7);
+}
+
+.gallery__item a:hover img {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
